@@ -2,10 +2,12 @@ public class MainBack {
     public MainBack(){
 
     }
-    Player playerOne = new Player("Tobi");
-    Player playerTwo = new Player("Tim");
+    PlayerOne playerOne = new PlayerOne("Tobi");
+    PlayerTwo playerTwo = new PlayerTwo("Tim");
 
+    public void  test(){
 
+    }
 
     public void printChessBoard(char[][] board){
         for(int i=0;i< board.length;i++){

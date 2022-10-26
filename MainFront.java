@@ -4,6 +4,7 @@ public class MainFront {
         char[][] chessBoard = new char[8][8];
         Game.setupChessBoard(chessBoard);
         Game.printChessBoard(chessBoard);
+
     }
 
 }
