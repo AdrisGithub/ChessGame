@@ -10,9 +10,9 @@ public class MainBack {
     }
 
     public void printChessBoard(char[][] board){
-        for(int i=0;i< board.length;i++){
-            for(int o=0;o< board.length;o++){
-                System.out.print(board[o][i]+"  ");
+        for(int y=0;y< board.length;y++){
+            for(int x=0;x< board.length;x++){
+                System.out.print(board[y][x]+"  ");
             }
             System.out.print("\n");
         }

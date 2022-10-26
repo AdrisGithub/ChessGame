@@ -1,20 +1,20 @@
 public class PlayerTwo {
-    King King = new King();
-    Queen Queen = new Queen();
-    Rook RookOne = new Rook(1,2);
-    Rook RookTwo = new Rook(4,3);
-    Bishop BishopOne = new Bishop();
-    Bishop BishopTwo = new Bishop();
-    Knight KnightOne = new Knight();
-    Knight KnightTwo = new Knight();
-    Pawn PawnOne = new Pawn(1,2);
-    Pawn PawnTwo = new Pawn(3,4);
-    Pawn PawnThree = new Pawn(1,2);
-    Pawn PawnFour = new Pawn(3,4);
-    Pawn PawnFive = new Pawn(1,2);
-    Pawn PawnSix = new Pawn(3,4);
-    Pawn PawnSeven = new Pawn(1,2);
-    Pawn PawnEight = new Pawn(3,4);
+    King King = new King(4, 7);
+    Queen Queen = new Queen(3,7);
+    Rook RookOne = new Rook(0,7);
+    Rook RookTwo = new Rook(7,7);
+    Bishop BishopOne = new Bishop(2,7);
+    Bishop BishopTwo = new Bishop(5,7);
+    Knight KnightOne = new Knight(1,7);
+    Knight KnightTwo = new Knight(6,7);
+    Pawn PawnOne = new Pawn(0,6);
+    Pawn PawnTwo = new Pawn(1,6);
+    Pawn PawnThree = new Pawn(2,6);
+    Pawn PawnFour = new Pawn(3,6);
+    Pawn PawnFive = new Pawn(4,6);
+    Pawn PawnSix = new Pawn(5,6);
+    Pawn PawnSeven = new Pawn(6,6);
+    Pawn PawnEight = new Pawn(7,6);
 
 
 
