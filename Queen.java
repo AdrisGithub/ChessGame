@@ -2,8 +2,8 @@ public class Queen {
     int x_coords;
     int y_coords;
     public Queen(int y,int x){
-        this.x_coords=y;
-        this.y_coords=x;
+        this.x_coords=x;
+        this.y_coords=y;
     }
 
     public int getXCoords() {

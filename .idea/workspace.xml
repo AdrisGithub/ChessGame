@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77982c54-bacc-4e20-9866-3d97ea3345f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainFront.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayerTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/Bishop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/Bishop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/King.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/Knight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/MainBack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/MainBack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/MainFront.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/MainFront.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/Pawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/Pawn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/PlayerOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/PlayerOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/PlayerTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/PlayerTwo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/Queen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/Queen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/Rook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/Rook.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666797974502</updated>
-      <workItem from="1666797982820" duration="2461000" />
+      <workItem from="1666797982820" duration="8510000" />
     </task>
     <servers />
   </component>
