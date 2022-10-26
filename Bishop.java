@@ -1,9 +1,17 @@
 public class Bishop {
     int x_coords;
     int y_coords;
-    public Bishop(int y,int x){
+    boolean alive;
+    public Bishop(int y,int x, boolean alive){
         this.x_coords=x;
         this.y_coords=y;
+        this.alive= alive;
+    }
+    public void setAlive(boolean alive) {
+        this.alive = alive;
+    }
+    public boolean isAlive() {
+        return alive;
     }
     public int getXCoords() {
         return x_coords;

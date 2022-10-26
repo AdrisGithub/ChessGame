@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="77982c54-bacc-4e20-9866-3d97ea3345f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlayerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlayerTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rook.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +38,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="RunManager">
@@ -56,7 +67,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666797974502</updated>
-      <workItem from="1666797982820" duration="656000" />
+      <workItem from="1666797982820" duration="8510000" />
+      <workItem from="1666814664198" duration="1144000" />
     </task>
     <servers />
   </component>

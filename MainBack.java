@@ -20,7 +20,7 @@ public class MainBack {
     public void setupChessBoard() {
         for (int y = 0; y < chessBoard.length; y++) {
             for (int x = 0; x < chessBoard.length; x++) {
-                if ((y == playerOne.bishopOne.getYCoords() && x == playerOne.bishopOne.getXCoords()) || (y == playerOne.bishopTwo.getYCoords() && x == playerOne.bishopTwo.getXCoords())) {
+                if ((y == playerOne.bishopOne.getYCoords() && x == playerOne.bishopOne.getXCoords()) || (y == playerOne.bishopTwo.getYCoords() && x == playerOne.bishopTwo.getXCoords()) &&(playerOne.bishopOne.isAlive())&&(playerOne.bishopTwo.isAlive())) {
                     chessBoard[y][x] = 'B';
                 } else if (y == playerOne.king.getYCoords() && x == playerOne.king.getXCoords()) {
                     chessBoard[y][x] = 'W';
