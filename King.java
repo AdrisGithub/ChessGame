@@ -1,7 +1,7 @@
 public class King {
-    int x_coords;
-    int y_coords;
-    boolean alive;
+    private int x_coords;
+    private int y_coords;
+    private boolean alive;
     public King(int y, int x, boolean alive){
         this.x_coords=x;
         this.y_coords=y;
@@ -29,5 +29,12 @@ public class King {
 
     public void setYCoords(int y) {
         this.y_coords = y;
+    }
+    public void setYXCoords(int y, int x){
+        setYCoords(y);
+        setXCoords(x);
+    }
+    public boolean isKingOnThisField(int y, int x){
+        return ((y == y_coords && x ==x_coords)&& alive);
     }
 }

@@ -28,4 +28,11 @@ public class Bishop {
     public void setYCoords(int y) {
         this.y_coords = y;
     }
+    public void setYXCoords(int y, int x){
+        setYCoords(y);
+        setXCoords(x);
+    }
+    public boolean isBishopOnThisField(int y, int x){
+        return ((y == y_coords && x ==x_coords)&& alive);
+    }
 }

@@ -28,4 +28,12 @@ public class Knight {
     public void setYCoords(int y) {
         this.y_coords = y;
     }
+    public void setYXCoords(int y, int x){
+        setYCoords(y);
+        setXCoords(x);
+    }
+    public boolean isKnightOnThisField(int y, int x){
+        return ((y == y_coords && x ==x_coords)&& alive);
+
+    }
 }

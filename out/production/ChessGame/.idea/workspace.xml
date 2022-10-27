@@ -8,10 +8,8 @@
       <change beforePath="$PROJECT_DIR$/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bishop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/King.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainFront.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayerTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Queen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rook.java" afterDir="false" />
     </list>
@@ -32,19 +30,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="MainFront" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainFront" />
@@ -69,6 +67,8 @@
       <updated>1666797974502</updated>
       <workItem from="1666797982820" duration="8510000" />
       <workItem from="1666814664198" duration="1144000" />
+      <workItem from="1666860315922" duration="1491000" />
+      <workItem from="1666882774064" duration="357000" />
     </task>
     <servers />
   </component>

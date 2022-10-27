@@ -23,6 +23,26 @@ public class PlayerTwo {
     public PlayerTwo(String name) {
         this.playerName = name;
     }
+    public boolean areBishopsOnThisField(int y, int x){
+        return (bishopOne.isBishopOnThisField(y,x)||bishopTwo.isBishopOnThisField(y,x));
+    }
+    public boolean areKingsOnThisField(int y, int x){
+        return (king.isKingOnThisField( y, x));
+    }
+    public boolean arePawnsOnThisField(int y, int x){
+        return (pawnOne.isPawnOnThisField(y,x)||pawnTwo.isPawnOnThisField(y,x)||pawnThree.isPawnOnThisField(y,x)
+                ||pawnFour.isPawnOnThisField(y,x)||pawnFive.isPawnOnThisField(y,x)||pawnSix.isPawnOnThisField(y,x)
+                ||pawnSeven.isPawnOnThisField(y,x)||pawnEight.isPawnOnThisField(y,x));
+    }
+    public boolean areKnightsOnThisField(int y, int x){
+        return (knightOne.isKnightOnThisField(y,x) || knightTwo.isKnightOnThisField(y,x));
+    }
+    public boolean areQueensOnThisField(int y, int x){
+        return (queen.isQueenOnThisField(y,x));
+    }
+    public boolean areRooksOnThisField(int y, int x){
+        return (rookOne.isRookOnThisField(y,x)|| rookTwo.isRookOnThisField(y,x));
+    }
 
 
 }
