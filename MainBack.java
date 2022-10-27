@@ -1,3 +1,6 @@
+import java.util.Locale;
+import java.util.Scanner;
+
 public class MainBack {
     public MainBack() {
 
@@ -6,7 +9,7 @@ public class MainBack {
     PlayerOne playerOne = new PlayerOne("Tobi");
     PlayerTwo playerTwo = new PlayerTwo("Tim");
     char[][] chessBoard = new char[8][8];
-
+    Scanner scanner = new Scanner(System.in);
 
     public void printChessBoard() {
         System.out.print("    0  1  2  3  4  5  6  7  X");
@@ -51,6 +54,35 @@ public class MainBack {
                 } else {
                     chessBoard[y][x] = '◯';
                 }
+            }
+        }
+    }
+    public void inputToFigureOptions(String input, int moves){
+        int counter=0;
+        while(counter!=1) {
+            counter = 0;
+            char inputChar = input.toUpperCase().charAt(0);
+            switch (inputChar) {
+                case ('W'):
+                    if((moves % 2) ==0){
+                    }else{
+
+                    }
+                    break;
+                case ('K'):
+                    break;
+                case ('P'):
+                    break;
+                case ('Q'):
+                    break;
+                case ('R'):
+                    break;
+                case ('B'):
+                    break;
+                default:
+                    System.out.println("Falsche Eingabe\nBitte erneut eingeben");
+                    input = scanner.next();
+                    counter--;
             }
         }
     }
