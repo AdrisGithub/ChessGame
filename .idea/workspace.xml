@@ -6,10 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="77982c54-bacc-4e20-9866-3d97ea3345f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Knight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainBack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainFront.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pawn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayerTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/Knight.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessGame/MainBack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/MainBack.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessGame/PlayerOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/PlayerOne.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessGame/PlayerTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/PlayerTwo.class" afterDir="false" />
@@ -81,6 +88,7 @@
       <workItem from="1666962920762" duration="538000" />
       <workItem from="1666963847841" duration="7498000" />
       <workItem from="1666982994783" duration="2371000" />
+      <workItem from="1666986210643" duration="1902000" />
     </task>
     <servers />
   </component>

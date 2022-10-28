@@ -1,10 +1,9 @@
-import java.util.Scanner;
 
 public class Knight {
-    Scanner scanner = new Scanner(System.in);
-    int x_coords;
-    int y_coords;
-    boolean alive;
+
+    private int x_coords;
+    private int y_coords;
+    private boolean alive;
     public Knight(int y, int x, boolean alive){
         this.x_coords=x;
         this.y_coords=y;
@@ -24,21 +23,11 @@ public class Knight {
         return y_coords;
     }
 
-    public void setXCoords(int x) {
-        this.x_coords = x;
-    }
-
-    public void setYCoords(int y) {
-        this.y_coords = y;
-    }
     public boolean isKnightOnThisField(int y, int x){
         return ((y == y_coords && x ==x_coords)&& alive);
 
     }
-    public void setYXCoords(int y, int x){
-        setYCoords(y);
-        setXCoords(x);
-    }
+
     public void setYXCoordsArray(int[] array){
         y_coords=array[0];
         x_coords=array[1];

@@ -18,7 +18,7 @@ public class PlayerOne {
     Pawn pawnSix = new Pawn(5, 1,true);
     Pawn pawnSeven = new Pawn(6, 1,true);
     Pawn pawnEight = new Pawn(7, 1,true);
-    int[] newCoordinates = new int[2];
+    private int[] newCoordinates = new int[2];
     String playerName;
     public PlayerOne(String name) {
         this.playerName = name;
@@ -51,15 +51,12 @@ public class PlayerOne {
                     "2) Koords (Y X): " + knightTwo.getYCoords() + " " + knightTwo.getXCoords());
             int inputKnight = scanner.nextInt();
             switch (inputKnight) {
-                case (1):
-                    knightOne.setYXCoordsArray(setNewXYCoords());
-                    break;
-                case (2):
-                    knightTwo.setYXCoordsArray(setNewXYCoords());
-                    break;
-                default:
+                case (1) -> knightOne.setYXCoordsArray(setNewXYCoords());
+                case (2) -> knightTwo.setYXCoordsArray(setNewXYCoords());
+                default -> {
                     System.out.println("Falsche Eingabe");
                     inputKnight = scanner.nextInt();
+                }
             }
         }
         else if(knightOne.isAlive()){
@@ -78,15 +75,12 @@ public class PlayerOne {
                     "2) Koords (Y X): " + rookTwo.getYCoords() + " " + rookTwo.getXCoords());
             int inputRook = scanner.nextInt();
             switch (inputRook) {
-                case (1):
-                    rookOne.setYXCoordsArray(setNewXYCoords());
-                    break;
-                case (2):
-                    rookTwo.setYXCoordsArray(setNewXYCoords());
-                    break;
-                default:
+                case (1) -> rookOne.setYXCoordsArray(setNewXYCoords());
+                case (2) -> rookTwo.setYXCoordsArray(setNewXYCoords());
+                default -> {
                     System.out.println("Falsche Eingabe");
                     inputRook = scanner.nextInt();
+                }
             }
         }
         else if(rookOne.isAlive()){
@@ -105,15 +99,12 @@ public class PlayerOne {
                     "2) Koords (Y X): " + bishopTwo.getYCoords() + " " + bishopTwo.getXCoords());
             int inputBishop = scanner.nextInt();
             switch (inputBishop) {
-                case (1):
-                    bishopOne.setYXCoordsArray(setNewXYCoords());
-                    break;
-                case (2):
-                    bishopTwo.setYXCoordsArray(setNewXYCoords());
-                    break;
-                default:
+                case (1) -> bishopOne.setYXCoordsArray(setNewXYCoords());
+                case (2) -> bishopTwo.setYXCoordsArray(setNewXYCoords());
+                default -> {
                     System.out.println("Falsche Eingabe");
                     inputBishop = scanner.nextInt();
+                }
             }
         }
         else if(bishopOne.isAlive()){
@@ -146,37 +137,22 @@ public class PlayerOne {
         }
         int inputPawn = scanner.nextInt();
         switch (inputPawn) {
-            case (1):
-                pawnOne.setYXCoordsArray(setNewXYCoords());
-                break;
-            case (2):
-                pawnTwo.setYXCoordsArray(setNewXYCoords());
-                break;
-            case (3):
-                pawnThree.setYXCoordsArray(setNewXYCoords());
-                break;
-            case (4):
-                pawnFour.setYXCoordsArray(setNewXYCoords());
-                break;
-            case (5):
-                pawnFive.setYXCoordsArray(setNewXYCoords());
-                break;
-            case (6):
-                pawnSix.setYXCoordsArray(setNewXYCoords());
-                break;
-            case (7):
-                pawnSeven.setYXCoordsArray(setNewXYCoords());
-                break;
-            case (8):
-                pawnEight.setYXCoordsArray(setNewXYCoords());
-                break;
-            default:
+            case (1) -> pawnOne.setYXCoordsArray(setNewXYCoords());
+            case (2) -> pawnTwo.setYXCoordsArray(setNewXYCoords());
+            case (3) -> pawnThree.setYXCoordsArray(setNewXYCoords());
+            case (4) -> pawnFour.setYXCoordsArray(setNewXYCoords());
+            case (5) -> pawnFive.setYXCoordsArray(setNewXYCoords());
+            case (6) -> pawnSix.setYXCoordsArray(setNewXYCoords());
+            case (7) -> pawnSeven.setYXCoordsArray(setNewXYCoords());
+            case (8) -> pawnEight.setYXCoordsArray(setNewXYCoords());
+            default -> {
                 System.out.println("Falsche Eingabe");
                 inputPawn = scanner.nextInt();
+            }
         }
     }
     public void inputToFigureOptions(String input) {
-        int counter = 0;
+        int counter =0;
         do{
             char inputChar = input.toUpperCase().charAt(0);
             counter = 0;
@@ -281,7 +257,7 @@ public class PlayerOne {
         return newY;
 
     }
-    public boolean checkIfBoxIsntValid(int y,int x){
+    public boolean checkIfBoxIsntValid(int y, int x){
         return(areBishopsOnThisField(y,x)||areKingsOnThisField(y,x)||areKnightsOnThisField(y,x)||areQueensOnThisField(y,x)||areRooksOnThisField(y,x)||arePawnsOnThisField(y,x));
     }
     public int[] getNewCoordinates() {
@@ -292,6 +268,7 @@ public class PlayerOne {
         this.newCoordinates[0] = y;
         this.newCoordinates[1] = x;
     }
+
     public void outputKillsPlayerOne(int[] newCoords){
         int newY = newCoords[0];
         int newX = newCoords[1];

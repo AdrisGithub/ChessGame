@@ -1,13 +1,13 @@
-import java.util.Scanner;
+
 
 public class MainBack {
     public MainBack() {
 
     }
-    Scanner scanner = new Scanner(System.in);
+
     PlayerOne playerOne = new PlayerOne("Tobi");
     PlayerTwo playerTwo = new PlayerTwo("Tim");
-    char[][] chessBoard = new char[8][8];
+    private char[][] chessBoard = new char[8][8];
 
     public void printChessBoard() {
         System.out.print("    0  1  2  3  4  5  6  7  X");
@@ -55,8 +55,6 @@ public class MainBack {
             }
         }
     }
-
-
 
 
 }
