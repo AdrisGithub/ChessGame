@@ -18,6 +18,7 @@ public class PlayerOne {
     Pawn pawnSix = new Pawn(5, 1,true);
     Pawn pawnSeven = new Pawn(6, 1,true);
     Pawn pawnEight = new Pawn(7, 1,true);
+    int[] newCoordinates = new int[2];
     String playerName;
     public PlayerOne(String name) {
         this.playerName = name;
@@ -248,7 +249,6 @@ public class PlayerOne {
 
 
     public int[] setNewXYCoords(){
-        int[] result = new int[2];
         int yKoords = newYLocation();
         int xKoords = newXLocation();
         while(checkIfBoxIsntValid(yKoords,xKoords)){
@@ -256,10 +256,10 @@ public class PlayerOne {
             yKoords = newYLocation();
             xKoords = newXLocation();
         }
-        result[0]=yKoords;
-        result[1]=xKoords;
-        return result;
+        setNewCoordinates(yKoords,xKoords);
+        return newCoordinates;
     }
+
 
 
     public int newXLocation(){
@@ -283,6 +283,51 @@ public class PlayerOne {
     }
     public boolean checkIfBoxIsntValid(int y,int x){
         return(areBishopsOnThisField(y,x)||areKingsOnThisField(y,x)||areKnightsOnThisField(y,x)||areQueensOnThisField(y,x)||areRooksOnThisField(y,x)||arePawnsOnThisField(y,x));
+    }
+    public int[] getNewCoordinates() {
+        return newCoordinates;
+    }
+
+    public void setNewCoordinates(int y, int x) {
+        this.newCoordinates[0] = y;
+        this.newCoordinates[1] = x;
+    }
+    public void outputKillsPlayerOne(int[] newCoords){
+        int newY = newCoords[0];
+        int newX = newCoords[1];
+        if(newY==knightTwo.getYCoords()&&newX==knightTwo.getXCoords()){
+            knightTwo.setAlive(false);
+        } else if (newY == knightOne.getYCoords() && newX == knightOne.getXCoords()) {
+            knightOne.setAlive(false);
+        } else if (newY == rookTwo.getYCoords() && newX == rookTwo.getXCoords()) {
+            rookTwo.setAlive(false);
+        }else if (newY == rookOne.getYCoords() && newX == rookOne.getXCoords()) {
+            rookOne.setAlive(false);
+        }else if (newY == queen.getYCoords() && newX == queen.getXCoords()) {
+            queen.setAlive(false);
+        }else if (newY == king.getYCoords() && newX == king.getXCoords()) {
+            king.setAlive(false);
+        }else if (newY == bishopOne.getYCoords() && newX == bishopOne.getXCoords()) {
+            bishopOne.setAlive(false);
+        }else if (newY == bishopTwo.getYCoords() && newX == bishopTwo.getXCoords()) {
+            bishopTwo.setAlive(false);
+        }else if (newY == pawnOne.getYCoords() && newX == pawnOne.getXCoords()) {
+            pawnOne.setAlive(false);
+        }else if (newY == pawnTwo.getYCoords() && newX == pawnTwo.getXCoords()) {
+            pawnTwo.setAlive(false);
+        }else if (newY == pawnThree.getYCoords() && newX == pawnThree.getXCoords()) {
+            pawnThree.setAlive(false);
+        }else if (newY == pawnFour.getYCoords() && newX == pawnFour.getXCoords()) {
+            pawnFour.setAlive(false);
+        }else if (newY == pawnFive.getYCoords() && newX == pawnFive.getXCoords()) {
+            pawnFive.setAlive(false);
+        }else if (newY == pawnSix.getYCoords() && newX == pawnSix.getXCoords()) {
+            pawnSix.setAlive(false);
+        }else if (newY == pawnSeven.getYCoords() && newX == pawnSeven.getXCoords()) {
+            pawnSeven.setAlive(false);
+        }else if (newY == pawnEight.getYCoords() && newX == pawnEight.getXCoords()) {
+            pawnEight.setAlive(false);
+        }
     }
 
 }
