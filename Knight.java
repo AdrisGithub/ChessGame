@@ -31,31 +31,16 @@ public class Knight {
     public void setYCoords(int y) {
         this.y_coords = y;
     }
-    public void setNewYXCoords(){
-        setYCoords(newYLocation());
-        setXCoords(newXLocation());
-    }
     public boolean isKnightOnThisField(int y, int x){
         return ((y == y_coords && x ==x_coords)&& alive);
 
     }
-    public int newXLocation(){
-        System.out.println("Neue X Koordinate:");
-        int newX = scanner.nextInt();
-        while(newX<0  || newX>7){
-            System.out.println("Falsche Eingabe");
-            newX = scanner.nextInt();
-        }
-        return newX;
+    public void setYXCoords(int y, int x){
+        setYCoords(y);
+        setXCoords(x);
     }
-    public int newYLocation(){
-        System.out.println("Neue Y Koordinate:");
-        int newY = scanner.nextInt();
-        while(newY<0  || newY>7){
-            System.out.println("Falsche Eingabe");
-            newY = scanner.nextInt();
-        }
-        return newY;
-
+    public void setYXCoordsArray(int[] array){
+        y_coords=array[0];
+        x_coords=array[1];
     }
 }

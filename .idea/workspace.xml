@@ -5,25 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77982c54-bacc-4e20-9866-3d97ea3345f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bishop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/King.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainBack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainFront.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pawn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayerTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Queen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessGame/Bishop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/Bishop.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessGame/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/King.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessGame/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/Knight.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessGame/MainBack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/MainBack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/MainFront.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/MainFront.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessGame/Pawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/Pawn.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessGame/PlayerOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/PlayerOne.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessGame/PlayerTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/PlayerTwo.class" afterDir="false" />
@@ -42,7 +38,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2Gg6dJyGos2ZgtCi2WnK1hAMtRa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -95,7 +91,7 @@
       <workItem from="1666882774064" duration="11007000" />
       <workItem from="1666945565848" duration="5866000" />
       <workItem from="1666962920762" duration="538000" />
-      <workItem from="1666963847841" duration="1802000" />
+      <workItem from="1666963847841" duration="7498000" />
     </task>
     <servers />
   </component>

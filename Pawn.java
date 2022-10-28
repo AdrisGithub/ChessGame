@@ -38,28 +38,8 @@ public class Pawn {
     public boolean isPawnOnThisField(int y, int x){
         return ((y == y_coords && x ==x_coords)&& alive);
     }
-
-    public int newXLocation(){
-        System.out.println("Neue X Koordinate:");
-        int newX = scanner.nextInt();
-        while(newX<0  || newX>7){
-            System.out.println("Falsche Eingabe");
-            newX = scanner.nextInt();
-        }
-        return newX;
-    }
-    public int newYLocation(){
-        System.out.println("Neue Y Koordinate:");
-        int newY = scanner.nextInt();
-        while(newY<0  || newY>7){
-            System.out.println("Falsche Eingabe");
-            newY = scanner.nextInt();
-        }
-        return newY;
-
-    }
-    public void setNewYXCoords(){
-        setYCoords(newYLocation());
-        setXCoords(newXLocation());
+    public void setYXCoordsArray(int[] array){
+        y_coords=array[0];
+        x_coords=array[1];
     }
 }

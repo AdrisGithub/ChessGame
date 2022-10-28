@@ -17,7 +17,7 @@ public class MainFront {
                 System.out.println("Links du bist dran \nWelche Figur willst du bewegen ");
                 leftInputString = scanner.next();
                 Game.playerOne.inputToFigureOptions(leftInputString);
-
+                Game.outputKillsPlayerOne();
 
 
 
@@ -26,6 +26,7 @@ public class MainFront {
                 System.out.println("Rechts du bist dran\nWelche Figur willst du bewegen ");
                 rightInputString = scanner.next();
                 Game.playerTwo.inputToFigureOptions(rightInputString);
+                Game.outputKillsPlayerTwo();
             }
             moves++;
             Game.setupChessBoard();

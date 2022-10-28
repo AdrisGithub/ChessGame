@@ -51,10 +51,10 @@ public class PlayerOne {
             int inputKnight = scanner.nextInt();
             switch (inputKnight) {
                 case (1):
-                    knightOne.setNewYXCoords();
+                    knightOne.setYXCoordsArray(setNewXYCoords());
                     break;
                 case (2):
-                    knightTwo.setNewYXCoords();
+                    knightTwo.setYXCoordsArray(setNewXYCoords());
                     break;
                 default:
                     System.out.println("Falsche Eingabe");
@@ -62,10 +62,10 @@ public class PlayerOne {
             }
         }
         else if(knightOne.isAlive()){
-            knightOne.setNewYXCoords();
+            knightOne.setYXCoordsArray(setNewXYCoords());
         }
         else if(knightTwo.isAlive()){
-            knightTwo.setNewYXCoords();
+            knightTwo.setYXCoordsArray(setNewXYCoords());
         }else{
             System.out.println("Es sind keine Knights mehr auf dem Feld");
         }
@@ -78,10 +78,10 @@ public class PlayerOne {
             int inputRook = scanner.nextInt();
             switch (inputRook) {
                 case (1):
-                    rookOne.setNewYXCoords();
+                    rookOne.setYXCoordsArray(setNewXYCoords());
                     break;
                 case (2):
-                    rookTwo.setNewYXCoords();
+                    rookTwo.setYXCoordsArray(setNewXYCoords());
                     break;
                 default:
                     System.out.println("Falsche Eingabe");
@@ -89,10 +89,10 @@ public class PlayerOne {
             }
         }
         else if(rookOne.isAlive()){
-            rookOne.setNewYXCoords();
+            rookOne.setYXCoordsArray(setNewXYCoords());
         }
         else if(rookTwo.isAlive()){
-            rookTwo.setNewYXCoords();
+            rookTwo.setYXCoordsArray(setNewXYCoords());
         }else{
             System.out.println("Es sind keine Rooks mehr auf dem Feld");
         }
@@ -105,10 +105,10 @@ public class PlayerOne {
             int inputBishop = scanner.nextInt();
             switch (inputBishop) {
                 case (1):
-                    bishopOne.setNewYXCoords();
+                    bishopOne.setYXCoordsArray(setNewXYCoords());
                     break;
                 case (2):
-                    bishopTwo.setNewYXCoords();
+                    bishopTwo.setYXCoordsArray(setNewXYCoords());
                     break;
                 default:
                     System.out.println("Falsche Eingabe");
@@ -116,10 +116,10 @@ public class PlayerOne {
             }
         }
         else if(bishopOne.isAlive()){
-            bishopOne.setNewYXCoords();
+            bishopOne.setYXCoordsArray(setNewXYCoords());
         }
         else if(bishopTwo.isAlive()){
-            bishopTwo.setNewYXCoords();
+            bishopTwo.setYXCoordsArray(setNewXYCoords());
         }else{
             System.out.println("Es sind keine Bishops mehr auf dem Feld");
         }
@@ -146,28 +146,28 @@ public class PlayerOne {
         int inputPawn = scanner.nextInt();
         switch (inputPawn) {
             case (1):
-                pawnOne.setNewYXCoords();
+                pawnOne.setYXCoordsArray(setNewXYCoords());
                 break;
             case (2):
-                pawnTwo.setNewYXCoords();
+                pawnTwo.setYXCoordsArray(setNewXYCoords());
                 break;
             case (3):
-                pawnThree.setNewYXCoords();
+                pawnThree.setYXCoordsArray(setNewXYCoords());
                 break;
             case (4):
-                pawnFour.setNewYXCoords();
+                pawnFour.setYXCoordsArray(setNewXYCoords());
                 break;
             case (5):
-                pawnFive.setNewYXCoords();
+                pawnFive.setYXCoordsArray(setNewXYCoords());
                 break;
             case (6):
-                pawnSix.setNewYXCoords();
+                pawnSix.setYXCoordsArray(setNewXYCoords());
                 break;
             case (7):
-                pawnSeven.setNewYXCoords();
+                pawnSeven.setYXCoordsArray(setNewXYCoords());
                 break;
             case (8):
-                pawnEight.setNewYXCoords();
+                pawnEight.setYXCoordsArray(setNewXYCoords());
                 break;
             default:
                 System.out.println("Falsche Eingabe");
@@ -182,7 +182,7 @@ public class PlayerOne {
             switch (inputChar) {
                 case ('W'):
                     if(king.isAlive()){
-                        king.setNewYXCoords();
+                        king.setYXCoordsArray(setNewXYCoords());
                     }
                     else{
                         System.out.println("Kein King mehr auf dem Feld");
@@ -212,7 +212,7 @@ public class PlayerOne {
                     break;
                 case ('Q'):
                     if(queen.isAlive()){
-                        queen.setNewYXCoords();
+                        queen.setYXCoordsArray(setNewXYCoords());
                     }else{
                         System.out.println("Keine Queen mehr auf dem Feld");
                         input = scanner.next();
@@ -244,6 +244,45 @@ public class PlayerOne {
                     counter--;
             }
         }while(counter !=0);
+    }
+
+
+    public int[] setNewXYCoords(){
+        int[] result = new int[2];
+        int yKoords = newYLocation();
+        int xKoords = newXLocation();
+        while(checkIfBoxIsntValid(yKoords,xKoords)){
+            System.out.println("Einer der Werte ist falsch");
+            yKoords = newYLocation();
+            xKoords = newXLocation();
+        }
+        result[0]=yKoords;
+        result[1]=xKoords;
+        return result;
+    }
+
+
+    public int newXLocation(){
+        System.out.println("Neue X Koordinate:");
+        int newX = scanner.nextInt();
+        while(newX<0  || newX>7){
+            System.out.println("Falsche Eingabe");
+            newX = scanner.nextInt();
+        }
+        return newX;
+    }
+    public int newYLocation(){
+        System.out.println("Neue Y Koordinate:");
+        int newY = scanner.nextInt();
+        while(newY<0  || newY>7){
+            System.out.println("Falsche Eingabe");
+            newY = scanner.nextInt();
+        }
+        return newY;
+
+    }
+    public boolean checkIfBoxIsntValid(int y,int x){
+        return(areBishopsOnThisField(y,x)||areKingsOnThisField(y,x)||areKnightsOnThisField(y,x)||areQueensOnThisField(y,x)||areRooksOnThisField(y,x)||arePawnsOnThisField(y,x));
     }
 
 }
