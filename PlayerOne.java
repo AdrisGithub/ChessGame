@@ -45,16 +45,16 @@ public class PlayerOne {
     }
     public void showOptionsKnight(){
         if(knightOne.isAlive()&& knightTwo.isAlive()) {
-            System.out.println(" Welchen Knight willst du bewegen?\n" +
+            System.out.println("Welchen Knight willst du bewegen?\n" +
                     "1) Koords (Y X): " + knightOne.getYCoords() + " " + knightOne.getXCoords() + "\n" +
                     "2) Koords (Y X): " + knightTwo.getYCoords() + " " + knightTwo.getXCoords());
             int inputKnight = scanner.nextInt();
             switch (inputKnight) {
                 case (1):
-                    //
+                    knightOne.setNewYXCoords();
                     break;
                 case (2):
-                    //
+                    knightTwo.setNewYXCoords();
                     break;
                 default:
                     System.out.println("Falsche Eingabe");
@@ -62,26 +62,26 @@ public class PlayerOne {
             }
         }
         else if(knightOne.isAlive()){
-            System.out.println("");
+            knightOne.setNewYXCoords();
         }
         else if(knightTwo.isAlive()){
-            System.out.println("");
+            knightTwo.setNewYXCoords();
         }else{
             System.out.println("Es sind keine Knights mehr auf dem Feld");
         }
     }
     public void showOptionsRook(){
         if(rookOne.isAlive()&& rookTwo.isAlive()) {
-            System.out.println(" Welchen Knight willst du bewegen?\n" +
+            System.out.println("Welchen Rook willst du bewegen?\n" +
                     "1) Koords (Y X): " + rookOne.getYCoords() + " " + rookOne.getXCoords() + "\n" +
                     "2) Koords (Y X): " + rookTwo.getYCoords() + " " + rookTwo.getXCoords());
             int inputRook = scanner.nextInt();
             switch (inputRook) {
                 case (1):
-                    //
+                    rookOne.setNewYXCoords();
                     break;
                 case (2):
-                    //
+                    rookTwo.setNewYXCoords();
                     break;
                 default:
                     System.out.println("Falsche Eingabe");
@@ -89,26 +89,26 @@ public class PlayerOne {
             }
         }
         else if(rookOne.isAlive()){
-            System.out.println("");
+            rookOne.setNewYXCoords();
         }
         else if(rookTwo.isAlive()){
-            System.out.println("");
+            rookTwo.setNewYXCoords();
         }else{
-            System.out.println("Es sind keine Knights mehr auf dem Feld");
+            System.out.println("Es sind keine Rooks mehr auf dem Feld");
         }
     }
     public void showOptionsBishop(){
         if(bishopOne.isAlive()&& bishopTwo.isAlive()) {
-            System.out.println(" Welchen Knight willst du bewegen?\n" +
+            System.out.println(" Welchen Bishop willst du bewegen?\n" +
                     "1) Koords (Y X): " + bishopOne.getYCoords() + " " + bishopOne.getXCoords() + "\n" +
                     "2) Koords (Y X): " + bishopTwo.getYCoords() + " " + bishopTwo.getXCoords());
             int inputBishop = scanner.nextInt();
             switch (inputBishop) {
                 case (1):
-                    //
+                    bishopOne.setNewYXCoords();
                     break;
                 case (2):
-                    //
+                    bishopTwo.setNewYXCoords();
                     break;
                 default:
                     System.out.println("Falsche Eingabe");
@@ -116,12 +116,12 @@ public class PlayerOne {
             }
         }
         else if(bishopOne.isAlive()){
-            System.out.println("");
+            bishopOne.setNewYXCoords();
         }
         else if(bishopTwo.isAlive()){
-            System.out.println("");
+            bishopTwo.setNewYXCoords();
         }else{
-            System.out.println("Es sind keine Knights mehr auf dem Feld");
+            System.out.println("Es sind keine Bishops mehr auf dem Feld");
         }
     }
     public void showOptionsPawn(){
@@ -143,35 +143,35 @@ public class PlayerOne {
         } if(pawnEight.isAlive()) {
             System.out.println("8) Koords (Y X): " + pawnEight.getYCoords() + " " + pawnEight.getXCoords());
         }
-        int inputBishop = scanner.nextInt();
-        switch (inputBishop) {
+        int inputPawn = scanner.nextInt();
+        switch (inputPawn) {
             case (1):
-                //
+                pawnOne.setNewYXCoords();
                 break;
             case (2):
-                //
+                pawnTwo.setNewYXCoords();
                 break;
             case (3):
-                //
+                pawnThree.setNewYXCoords();
                 break;
             case (4):
-                //
+                pawnFour.setNewYXCoords();
                 break;
             case (5):
-                //
+                pawnFive.setNewYXCoords();
                 break;
             case (6):
-                //
+                pawnSix.setNewYXCoords();
                 break;
             case (7):
-                //
+                pawnSeven.setNewYXCoords();
                 break;
             case (8):
-                //
+                pawnEight.setNewYXCoords();
                 break;
             default:
                 System.out.println("Falsche Eingabe");
-                inputBishop = scanner.nextInt();
+                inputPawn = scanner.nextInt();
         }
     }
     public void inputToFigureOptions(String input) {
@@ -182,7 +182,7 @@ public class PlayerOne {
             switch (inputChar) {
                 case ('W'):
                     if(king.isAlive()){
-                        //King bewegen
+                        king.setNewYXCoords();
                     }
                     else{
                         System.out.println("Kein King mehr auf dem Feld");
@@ -212,7 +212,7 @@ public class PlayerOne {
                     break;
                 case ('Q'):
                     if(queen.isAlive()){
-                        // Queen Bewegen
+                        queen.setNewYXCoords();
                     }else{
                         System.out.println("Keine Queen mehr auf dem Feld");
                         input = scanner.next();

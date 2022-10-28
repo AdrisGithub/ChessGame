@@ -1,4 +1,4 @@
-import com.sun.security.jgss.GSSUtil;
+
 
 import java.util.Scanner;
 
@@ -56,19 +56,19 @@ public class PlayerTwo {
             int inputKnight = scanner.nextInt();
             switch(inputKnight){
                 case(1):
-                    //
+                    knightOne.setNewYXCoords();
                 case(2):
-                    //
+                    knightTwo.setNewYXCoords();
                 default:
                     System.out.println("Falsche Eingabe");
                     inputKnight = scanner.nextInt();
             }
         }
         else if(knightOne.isAlive()){
-            System.out.println("");
+            knightOne.setNewYXCoords();
         }
         else if(knightTwo.isAlive()){
-            System.out.println("");
+            knightTwo.setNewYXCoords();
         }else{
             System.out.println("Es sind keine Knight mehr auf dem Feld");
         }
@@ -81,10 +81,10 @@ public class PlayerTwo {
             int inputRook = scanner.nextInt();
             switch (inputRook) {
                 case (1):
-                    //
+                    rookOne.setNewYXCoords();
                     break;
                 case (2):
-                    //
+                    rookTwo.setNewYXCoords();
                     break;
                 default:
                     System.out.println("Falsche Eingabe");
@@ -92,10 +92,10 @@ public class PlayerTwo {
             }
         }
         else if(rookOne.isAlive()){
-            System.out.println("");
+            rookOne.setNewYXCoords();
         }
         else if(rookTwo.isAlive()){
-            System.out.println("");
+            rookTwo.setNewYXCoords();
         }else{
             System.out.println("Es sind keine Rooks mehr auf dem Feld");
         }
@@ -108,10 +108,10 @@ public class PlayerTwo {
             int inputBishop = scanner.nextInt();
             switch (inputBishop) {
                 case (1):
-                    //
+                    bishopOne.setNewYXCoords();
                     break;
                 case (2):
-                    //
+                    bishopTwo.setNewYXCoords();
                     break;
                 default:
                     System.out.println("Falsche Eingabe");
@@ -119,10 +119,10 @@ public class PlayerTwo {
             }
         }
         else if(bishopOne.isAlive()){
-            System.out.println("");
+            bishopOne.setNewYXCoords();
         }
         else if(bishopTwo.isAlive()){
-            System.out.println("");
+            bishopTwo.setNewYXCoords();
         }else{
             System.out.println("Es sind keine Bishops mehr auf dem Feld");
         }
@@ -149,28 +149,28 @@ public class PlayerTwo {
         int inputPawn = scanner.nextInt();
         switch (inputPawn) {
             case (1):
-                //
+                pawnOne.setNewYXCoords();
                 break;
             case (2):
-                //
+                pawnTwo.setNewYXCoords();
                 break;
             case (3):
-                //
+                pawnThree.setNewYXCoords();
                 break;
             case (4):
-                //
+                pawnFour.setNewYXCoords();
                 break;
             case (5):
-                //
+                pawnFive.setNewYXCoords();
                 break;
             case (6):
-                //
+                pawnSix.setNewYXCoords();
                 break;
             case (7):
-                //
+                pawnSeven.setNewYXCoords();
                 break;
             case (8):
-                //
+                pawnEight.setNewYXCoords();
                 break;
             default:
                 System.out.println("Falsche Eingabe");
@@ -185,7 +185,7 @@ public class PlayerTwo {
             switch (inputChar) {
                 case ('W'):
                     if(king.isAlive()){
-
+                        king.setNewYXCoords();
                     }
                     else{
                         System.out.println("Kein King mehr auf dem Feld");
@@ -215,7 +215,7 @@ public class PlayerTwo {
                     break;
                 case ('Q'):
                     if(queen.isAlive()){
-
+                        queen.setNewYXCoords();
                     }else{
                         System.out.println("Keine Queen mehr auf dem Feld");
                         input = scanner.next();

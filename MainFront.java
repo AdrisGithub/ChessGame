@@ -21,8 +21,7 @@ public class MainFront {
 
 
 
-            }
-            else{
+            } else{
                 //Player 2
                 System.out.println("Rechts du bist dran\nWelche Figur willst du bewegen ");
                 rightInputString = scanner.next();
