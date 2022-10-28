@@ -11,7 +11,6 @@
       <change beforePath="$PROJECT_DIR$/MainFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainFront.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayerTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessGame/Bishop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessGame/Bishop.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +68,7 @@
       <workItem from="1666814664198" duration="1144000" />
       <workItem from="1666860315922" duration="1491000" />
       <workItem from="1666882774064" duration="11007000" />
+      <workItem from="1666945565848" duration="5866000" />
     </task>
     <servers />
   </component>

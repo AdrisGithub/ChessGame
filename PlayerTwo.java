@@ -127,6 +127,127 @@ public class PlayerTwo {
             System.out.println("Es sind keine Bishops mehr auf dem Feld");
         }
     }
+    public void showOptionsPawn(){
+        System.out.println(" Welchen Pawn willst du bewegen?");
+        if(pawnOne.isAlive()){
+            System.out.println("1) Koords (Y X): " + pawnOne.getYCoords() + " " + pawnOne.getXCoords());
+        } if(pawnTwo.isAlive()) {
+            System.out.println("2) Koords (Y X): " + pawnTwo.getYCoords() + " " + pawnTwo.getXCoords());
+        } if(pawnThree.isAlive()){
+            System.out.println("3) Koords (Y X): " + pawnThree.getYCoords() + " " + pawnThree.getXCoords());
+        } if(pawnFour.isAlive()){
+            System.out.println("4) Koords (Y X): " + pawnFour.getYCoords() + " " + pawnFour.getXCoords());
+        } if(pawnFive.isAlive()){
+            System.out.println("5) Koords (Y X): " + pawnFive.getYCoords() + " " + pawnFive.getXCoords());
+        } if(pawnSix.isAlive()){
+            System.out.println("6) Koords (Y X): " + pawnSix.getYCoords() + " " + pawnSix.getXCoords());
+        } if(pawnSeven.isAlive()){
+            System.out.println("7) Koords (Y X): " + pawnSeven.getYCoords() + " " + pawnSeven.getXCoords());
+        } if(pawnEight.isAlive()) {
+            System.out.println("8) Koords (Y X): " + pawnEight.getYCoords() + " " + pawnEight.getXCoords());
+        }
+        int inputPawn = scanner.nextInt();
+        switch (inputPawn) {
+            case (1):
+                //
+                break;
+            case (2):
+                //
+                break;
+            case (3):
+                //
+                break;
+            case (4):
+                //
+                break;
+            case (5):
+                //
+                break;
+            case (6):
+                //
+                break;
+            case (7):
+                //
+                break;
+            case (8):
+                //
+                break;
+            default:
+                System.out.println("Falsche Eingabe");
+                inputPawn = scanner.nextInt();
+        }
+    }
+    public void inputToFigureOptions(String input) {
+        int counter = 0;
+        do{
+            char inputChar = input.toUpperCase().charAt(0);
+            counter = 0;
+            switch (inputChar) {
+                case ('W'):
+                    if(king.isAlive()){
+
+                    }
+                    else{
+                        System.out.println("Kein King mehr auf dem Feld");
+                        input = scanner.next();
+                        counter--;
+                    }
+                    break;
+                case ('K'):
+                    if(knightOne.isAlive()||knightTwo.isAlive()){
+                        showOptionsKnight();
+                    }else{
+                        System.out.println("Keine Knights mehr auf dem Feld");
+                        input = scanner.next();
+                        counter--;
+                    }
+                    break;
+                case ('P'):
+                    if(pawnOne.isAlive()||pawnTwo.isAlive()||pawnThree.isAlive()
+                            ||pawnFour.isAlive() ||pawnFive.isAlive()||pawnSix.isAlive()
+                            ||pawnSeven.isAlive()||pawnEight.isAlive()){
+                        showOptionsPawn();
+                    }else{
+                        System.out.println("Keine Pawns mehr auf dem Feld");
+                        input = scanner.next();
+                        counter--;
+                    }
+                    break;
+                case ('Q'):
+                    if(queen.isAlive()){
+
+                    }else{
+                        System.out.println("Keine Queen mehr auf dem Feld");
+                        input = scanner.next();
+                        counter--;
+                    }
+                    break;
+                case ('R'):
+                    if(knightOne.isAlive()||knightTwo.isAlive()){
+                        showOptionsRook();
+                    }else{
+                        System.out.println("Keine Rooks mehr auf dem Feld");
+                        input = scanner.next();
+                        counter--;
+                    }
+
+                    break;
+                case ('B'):
+                    if(knightOne.isAlive()||knightTwo.isAlive()){
+                        showOptionsBishop();
+                    }else{
+                        System.out.println("Keine Bishops mehr auf dem Feld");
+                        input = scanner.next();
+                        counter--;
+                    }
+                    break;
+                default:
+                    System.out.println("Falsche Eingabe\nBitte erneut eingeben");
+                    input = scanner.next();
+                    counter--;
+            }
+        }while(counter !=0);
+    }
 
 
 }

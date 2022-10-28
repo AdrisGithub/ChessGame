@@ -16,7 +16,7 @@ public class MainFront {
                 //Player 1
                 System.out.println("Links du bist dran \nWelche Figur willst du bewegen ");
                 leftInputString = scanner.next();
-                Game.inputToFigureOptionsPlayerOne(leftInputString, moves);
+                Game.playerOne.inputToFigureOptions(leftInputString);
 
 
 
@@ -26,24 +26,13 @@ public class MainFront {
                 //Player 2
                 System.out.println("Rechts du bist dran\nWelche Figur willst du bewegen ");
                 rightInputString = scanner.next();
-                Game.inputToFigureOptionsPlayerTwo(rightInputString, moves);
+                Game.playerTwo.inputToFigureOptions(rightInputString);
             }
             moves++;
             Game.setupChessBoard();
             Game.printChessBoard();
         }
 
-
-
-
-
-
-
-        Game.playerOne.pawnEight.setXCoords(5);
-        Game.playerOne.pawnEight.setYCoords(6);
-        Game.playerOne.king.setYXCoords(5,6);
-        Game.setupChessBoard();
-        Game.printChessBoard();
 
     }
 

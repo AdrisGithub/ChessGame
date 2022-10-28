@@ -1,4 +1,6 @@
 public class King {
+    int newXCoords;
+    int newYCoords;
     private int x_coords;
     private int y_coords;
     private boolean alive;
@@ -36,5 +38,9 @@ public class King {
     }
     public boolean isKingOnThisField(int y, int x){
         return ((y == y_coords && x ==x_coords)&& alive);
+    }
+
+    public void newLocation(){
+
     }
 }

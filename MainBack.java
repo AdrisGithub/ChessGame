@@ -1,4 +1,4 @@
-import java.util.Locale;
+
 import java.util.Scanner;
 
 public class MainBack {
@@ -58,74 +58,5 @@ public class MainBack {
         }
     }
 
-    public void inputToFigureOptionsPlayerOne(String input, int moves) {
-        int counter = 0;
-        do{
-            char inputChar = input.toUpperCase().charAt(0);
-            counter = 0;
-            switch (inputChar) {
-                case ('W'):
-                    if(playerOne.king.isAlive()){
 
-                    }
-                    else{
-                        counter--;
-                    }
-                    break;
-                case ('K'):
-                    if(playerOne.knightOne.isAlive()||playerOne.knightTwo.isAlive()){
-                        playerOne.showOptionsKnight();
-                    }else{
-                        counter--;
-                    }
-                    break;
-                case ('P'):
-                    break;
-                case ('Q'):
-                    break;
-                case ('R'):
-                    playerOne.showOptionsRook();
-                    break;
-                case ('B'):
-                    playerOne.showOptionsBishop();
-                    break;
-                default:
-                    System.out.println("Falsche Eingabe\nBitte erneut eingeben");
-                    input = scanner.next();
-                    counter--;
-            }
-        }while(counter !=0);
-    }
-    public void inputToFigureOptionsPlayerTwo(String input, int moves) {
-        int counter = 0;
-        while (counter != 1) {
-            char inputChar = input.toUpperCase().charAt(0);
-            counter = 0;
-            switch (inputChar) {
-                case ('W'):
-                    //Spezial Fall
-                    break;
-                case ('K'):
-                    playerTwo.showOptionsKnight();
-                    break;
-                case ('P'):
-                    break;
-                case ('Q'):
-                    //Spezial Fall
-                    break;
-                case ('R'):
-                    playerTwo.showOptionsRook();
-                    break;
-                case ('B'):
-                    playerTwo.showOptionsBishop();
-                    break;
-                default:
-                    System.out.println("Falsche Eingabe\nBitte erneut eingeben");
-                    input = scanner.next();
-                    counter--;
-            }
-
-
-        }
-    }
 }
