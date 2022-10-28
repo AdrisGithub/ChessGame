@@ -1,4 +1,7 @@
+import java.util.Scanner;
+
 public class PlayerOne {
+    Scanner scanner = new Scanner(System.in);
     King king = new King(4, 0,true);
     Queen queen = new Queen(3, 0,true);
     Rook rookOne = new Rook(0, 0,true);
@@ -40,6 +43,86 @@ public class PlayerOne {
     public boolean areRooksOnThisField(int y, int x){
         return (rookOne.isRookOnThisField(y,x)|| rookTwo.isRookOnThisField(y,x));
     }
-
+    public void showOptionsKnight(){
+        if(knightOne.isAlive()&& knightTwo.isAlive()) {
+            System.out.println(" Welchen Knight willst du bewegen?\n" +
+                    "1) Koords (Y X): " + knightOne.getYCoords() + " " + knightOne.getXCoords() + "\n" +
+                    "2) Koords (Y X): " + knightTwo.getYCoords() + " " + knightTwo.getXCoords());
+            int inputKnight = scanner.nextInt();
+            switch (inputKnight) {
+                case (1):
+                    //
+                    break;
+                case (2):
+                    //
+                    break;
+                default:
+                    System.out.println("Falsche Eingabe");
+                    inputKnight = scanner.nextInt();
+            }
+        }
+        else if(knightOne.isAlive()){
+            System.out.println("");
+        }
+        else if(knightTwo.isAlive()){
+            System.out.println("");
+        }else{
+            System.out.println("Es sind keine Knights mehr auf dem Feld");
+        }
+    }
+    public void showOptionsRook(){
+        if(rookOne.isAlive()&& rookTwo.isAlive()) {
+            System.out.println(" Welchen Knight willst du bewegen?\n" +
+                    "1) Koords (Y X): " + rookOne.getYCoords() + " " + rookOne.getXCoords() + "\n" +
+                    "2) Koords (Y X): " + rookTwo.getYCoords() + " " + rookTwo.getXCoords());
+            int inputRook = scanner.nextInt();
+            switch (inputRook) {
+                case (1):
+                    //
+                    break;
+                case (2):
+                    //
+                    break;
+                default:
+                    System.out.println("Falsche Eingabe");
+                    inputRook = scanner.nextInt();
+            }
+        }
+        else if(rookOne.isAlive()){
+            System.out.println("");
+        }
+        else if(rookTwo.isAlive()){
+            System.out.println("");
+        }else{
+            System.out.println("Es sind keine Knights mehr auf dem Feld");
+        }
+    }
+    public void showOptionsBishop(){
+        if(bishopOne.isAlive()&& bishopTwo.isAlive()) {
+            System.out.println(" Welchen Knight willst du bewegen?\n" +
+                    "1) Koords (Y X): " + bishopOne.getYCoords() + " " + bishopOne.getXCoords() + "\n" +
+                    "2) Koords (Y X): " + bishopTwo.getYCoords() + " " + bishopTwo.getXCoords());
+            int inputBishop = scanner.nextInt();
+            switch (inputBishop) {
+                case (1):
+                    //
+                    break;
+                case (2):
+                    //
+                    break;
+                default:
+                    System.out.println("Falsche Eingabe");
+                    inputBishop = scanner.nextInt();
+            }
+        }
+        else if(bishopOne.isAlive()){
+            System.out.println("");
+        }
+        else if(bishopTwo.isAlive()){
+            System.out.println("");
+        }else{
+            System.out.println("Es sind keine Knights mehr auf dem Feld");
+        }
+    }
 
 }

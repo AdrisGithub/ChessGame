@@ -24,7 +24,7 @@ public class King {
     }
 
     public void setXCoords(int x) {
-        this.x_coords = x;
+            this.x_coords = x;
     }
 
     public void setYCoords(int y) {
