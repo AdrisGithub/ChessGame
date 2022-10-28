@@ -18,6 +18,7 @@ public class PlayerOne {
     Pawn pawnSix = new Pawn(5, 1,true);
     Pawn pawnSeven = new Pawn(6, 1,true);
     Pawn pawnEight = new Pawn(7, 1,true);
+    int[] newCoordinates = new int[2];
     String playerName;
     public PlayerOne(String name) {
         this.playerName = name;
@@ -51,10 +52,10 @@ public class PlayerOne {
             int inputKnight = scanner.nextInt();
             switch (inputKnight) {
                 case (1):
-                    knightOne.setNewYXCoords();
+                    knightOne.setYXCoordsArray(setNewXYCoords());
                     break;
                 case (2):
-                    knightTwo.setNewYXCoords();
+                    knightTwo.setYXCoordsArray(setNewXYCoords());
                     break;
                 default:
                     System.out.println("Falsche Eingabe");
@@ -62,10 +63,10 @@ public class PlayerOne {
             }
         }
         else if(knightOne.isAlive()){
-            knightOne.setNewYXCoords();
+            knightOne.setYXCoordsArray(setNewXYCoords());
         }
         else if(knightTwo.isAlive()){
-            knightTwo.setNewYXCoords();
+            knightTwo.setYXCoordsArray(setNewXYCoords());
         }else{
             System.out.println("Es sind keine Knights mehr auf dem Feld");
         }
@@ -78,10 +79,10 @@ public class PlayerOne {
             int inputRook = scanner.nextInt();
             switch (inputRook) {
                 case (1):
-                    rookOne.setNewYXCoords();
+                    rookOne.setYXCoordsArray(setNewXYCoords());
                     break;
                 case (2):
-                    rookTwo.setNewYXCoords();
+                    rookTwo.setYXCoordsArray(setNewXYCoords());
                     break;
                 default:
                     System.out.println("Falsche Eingabe");
@@ -89,10 +90,10 @@ public class PlayerOne {
             }
         }
         else if(rookOne.isAlive()){
-            rookOne.setNewYXCoords();
+            rookOne.setYXCoordsArray(setNewXYCoords());
         }
         else if(rookTwo.isAlive()){
-            rookTwo.setNewYXCoords();
+            rookTwo.setYXCoordsArray(setNewXYCoords());
         }else{
             System.out.println("Es sind keine Rooks mehr auf dem Feld");
         }
@@ -105,10 +106,10 @@ public class PlayerOne {
             int inputBishop = scanner.nextInt();
             switch (inputBishop) {
                 case (1):
-                    bishopOne.setNewYXCoords();
+                    bishopOne.setYXCoordsArray(setNewXYCoords());
                     break;
                 case (2):
-                    bishopTwo.setNewYXCoords();
+                    bishopTwo.setYXCoordsArray(setNewXYCoords());
                     break;
                 default:
                     System.out.println("Falsche Eingabe");
@@ -116,10 +117,10 @@ public class PlayerOne {
             }
         }
         else if(bishopOne.isAlive()){
-            bishopOne.setNewYXCoords();
+            bishopOne.setYXCoordsArray(setNewXYCoords());
         }
         else if(bishopTwo.isAlive()){
-            bishopTwo.setNewYXCoords();
+            bishopTwo.setYXCoordsArray(setNewXYCoords());
         }else{
             System.out.println("Es sind keine Bishops mehr auf dem Feld");
         }
@@ -146,28 +147,28 @@ public class PlayerOne {
         int inputPawn = scanner.nextInt();
         switch (inputPawn) {
             case (1):
-                pawnOne.setNewYXCoords();
+                pawnOne.setYXCoordsArray(setNewXYCoords());
                 break;
             case (2):
-                pawnTwo.setNewYXCoords();
+                pawnTwo.setYXCoordsArray(setNewXYCoords());
                 break;
             case (3):
-                pawnThree.setNewYXCoords();
+                pawnThree.setYXCoordsArray(setNewXYCoords());
                 break;
             case (4):
-                pawnFour.setNewYXCoords();
+                pawnFour.setYXCoordsArray(setNewXYCoords());
                 break;
             case (5):
-                pawnFive.setNewYXCoords();
+                pawnFive.setYXCoordsArray(setNewXYCoords());
                 break;
             case (6):
-                pawnSix.setNewYXCoords();
+                pawnSix.setYXCoordsArray(setNewXYCoords());
                 break;
             case (7):
-                pawnSeven.setNewYXCoords();
+                pawnSeven.setYXCoordsArray(setNewXYCoords());
                 break;
             case (8):
-                pawnEight.setNewYXCoords();
+                pawnEight.setYXCoordsArray(setNewXYCoords());
                 break;
             default:
                 System.out.println("Falsche Eingabe");
@@ -182,7 +183,7 @@ public class PlayerOne {
             switch (inputChar) {
                 case ('W'):
                     if(king.isAlive()){
-                        king.setNewYXCoords();
+                        king.setYXCoordsArray(setNewXYCoords());
                     }
                     else{
                         System.out.println("Kein King mehr auf dem Feld");
@@ -212,7 +213,7 @@ public class PlayerOne {
                     break;
                 case ('Q'):
                     if(queen.isAlive()){
-                        queen.setNewYXCoords();
+                        queen.setYXCoordsArray(setNewXYCoords());
                     }else{
                         System.out.println("Keine Queen mehr auf dem Feld");
                         input = scanner.next();
@@ -244,6 +245,89 @@ public class PlayerOne {
                     counter--;
             }
         }while(counter !=0);
+    }
+
+
+    public int[] setNewXYCoords(){
+        int yKoords = newYLocation();
+        int xKoords = newXLocation();
+        while(checkIfBoxIsntValid(yKoords,xKoords)){
+            System.out.println("Einer der Werte ist falsch");
+            yKoords = newYLocation();
+            xKoords = newXLocation();
+        }
+        setNewCoordinates(yKoords,xKoords);
+        return newCoordinates;
+    }
+
+
+
+    public int newXLocation(){
+        System.out.println("Neue X Koordinate:");
+        int newX = scanner.nextInt();
+        while(newX<0  || newX>7){
+            System.out.println("Falsche Eingabe");
+            newX = scanner.nextInt();
+        }
+        return newX;
+    }
+    public int newYLocation(){
+        System.out.println("Neue Y Koordinate:");
+        int newY = scanner.nextInt();
+        while(newY<0  || newY>7){
+            System.out.println("Falsche Eingabe");
+            newY = scanner.nextInt();
+        }
+        return newY;
+
+    }
+    public boolean checkIfBoxIsntValid(int y,int x){
+        return(areBishopsOnThisField(y,x)||areKingsOnThisField(y,x)||areKnightsOnThisField(y,x)||areQueensOnThisField(y,x)||areRooksOnThisField(y,x)||arePawnsOnThisField(y,x));
+    }
+    public int[] getNewCoordinates() {
+        return newCoordinates;
+    }
+
+    public void setNewCoordinates(int y, int x) {
+        this.newCoordinates[0] = y;
+        this.newCoordinates[1] = x;
+    }
+    public void outputKillsPlayerOne(int[] newCoords){
+        int newY = newCoords[0];
+        int newX = newCoords[1];
+        if(newY==knightTwo.getYCoords()&&newX==knightTwo.getXCoords()){
+            knightTwo.setAlive(false);
+        } else if (newY == knightOne.getYCoords() && newX == knightOne.getXCoords()) {
+            knightOne.setAlive(false);
+        } else if (newY == rookTwo.getYCoords() && newX == rookTwo.getXCoords()) {
+            rookTwo.setAlive(false);
+        }else if (newY == rookOne.getYCoords() && newX == rookOne.getXCoords()) {
+            rookOne.setAlive(false);
+        }else if (newY == queen.getYCoords() && newX == queen.getXCoords()) {
+            queen.setAlive(false);
+        }else if (newY == king.getYCoords() && newX == king.getXCoords()) {
+            king.setAlive(false);
+        }else if (newY == bishopOne.getYCoords() && newX == bishopOne.getXCoords()) {
+            bishopOne.setAlive(false);
+        }else if (newY == bishopTwo.getYCoords() && newX == bishopTwo.getXCoords()) {
+            bishopTwo.setAlive(false);
+        }else if (newY == pawnOne.getYCoords() && newX == pawnOne.getXCoords()) {
+            pawnOne.setAlive(false);
+        }else if (newY == pawnTwo.getYCoords() && newX == pawnTwo.getXCoords()) {
+            pawnTwo.setAlive(false);
+        }else if (newY == pawnThree.getYCoords() && newX == pawnThree.getXCoords()) {
+            pawnThree.setAlive(false);
+        }else if (newY == pawnFour.getYCoords() && newX == pawnFour.getXCoords()) {
+            pawnFour.setAlive(false);
+        }else if (newY == pawnFive.getYCoords() && newX == pawnFive.getXCoords()) {
+            pawnFive.setAlive(false);
+        }else if (newY == pawnSix.getYCoords() && newX == pawnSix.getXCoords()) {
+            pawnSix.setAlive(false);
+        }else if (newY == pawnSeven.getYCoords() && newX == pawnSeven.getXCoords()) {
+            pawnSeven.setAlive(false);
+        }else if (newY == pawnEight.getYCoords() && newX == pawnEight.getXCoords()) {
+            pawnEight.setAlive(false);
+        }
     }
 
 }

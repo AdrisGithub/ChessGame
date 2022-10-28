@@ -17,7 +17,7 @@ public class MainFront {
                 System.out.println("Links du bist dran \nWelche Figur willst du bewegen ");
                 leftInputString = scanner.next();
                 Game.playerOne.inputToFigureOptions(leftInputString);
-
+                Game.playerOne.outputKillsPlayerOne(Game.playerOne.newCoordinates);
 
 
 
@@ -26,11 +26,13 @@ public class MainFront {
                 System.out.println("Rechts du bist dran\nWelche Figur willst du bewegen ");
                 rightInputString = scanner.next();
                 Game.playerTwo.inputToFigureOptions(rightInputString);
+                Game.playerTwo.outputKillsPlayerTwo(Game.playerTwo.newCoordinates);
             }
             moves++;
             Game.setupChessBoard();
             Game.printChessBoard();
         }
+        System.out.println(" Schach Matt nach "+moves+" Zügen");
 
 
     }
